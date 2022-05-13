@@ -1,0 +1,341 @@
+html {
+    scroll-behavior: smooth;
+  }
+        
+        body {
+            background-color: #f0f0f0;
+            font: 200 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+            box-sizing: borderbox;
+            padding: 0ch;
+            margin: 0px;
+            transition: 300ms;
+            cursor: pointer;
+            text-align: justify;
+        }
+        tr,
+        th,
+        td {
+          border-collapse: collapse;
+          text-align: left;
+          padding: 5px; 
+          padding-left: 15px;
+          width: 40%;
+          font-size: medium;
+          background-color: #86a2e7;
+          color: rgb(37, 18, 18);
+}
+td:nth-child(even) {
+  background-color: #86a2e9;
+}
+
+table.odd {
+  background-color: #81c0ff;
+}
+
+
+        
+        .rad {
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: rgb(48, 56, 126);
+            display: flex;
+            flex-direction: row;
+            color: whitesmoke;
+        }
+        
+        #mlogo {
+            padding: 1vh;
+            height: 5vw;
+            margin: auto;
+        }
+        
+        .heading {
+            margin: auto;
+            padding: 2px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .lve {
+            font: 5em " Arial", sans-serif;
+            color: #3f3f3f;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .toppart {
+            padding-top: 5vh;
+        }
+        
+        .form {
+            width: 90%;
+            margin: auto;
+            border: 3px solid rgb(44, 44, 44);
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(202, 202, 202);
+        }
+        
+        #foarm {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            background-color: rgb(202, 202, 202);
+        }
+        
+        #txtipt {
+            width: 55%;
+            margin: auto;
+            padding: 10px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            font-size: 200%;
+        }
+        
+        #txtipt:hover {
+            background-color: rgb(255, 236, 236);
+            color: blue;
+            transition: 1000ms;
+        }
+        
+        #txtipt:focus {
+            outline: none;
+            background-color: rgb(255, 223, 223);
+            transition: 1000ms;
+        }
+        
+        select {
+            width: 35%;
+            padding: 10px;
+            font-size: 200%;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        
+        select:hover {
+            background-color: rgb(56, 56, 56);
+            color: blue;
+            color: rgb(255, 255, 255);
+            transition: 1000ms;
+        }
+        
+        #btnipt {
+            width: 20%;
+            margin: auto;
+            margin-left: 40%;
+            padding: 10px;
+            margin-top: 4vh;
+            border: 3px solid rgb(44, 44, 44);
+            border-radius: 20px;
+            background-color: rgb(43, 43, 43);
+            font-size: 200%;
+            color: whitesmoke;
+        }
+        
+        #btnipt:hover {
+            transition-duration: 100ms;
+            width: 20%;
+            color: whitesmoke;
+            border: 3px solid rgb(44, 44, 44);
+            background-color: rgb(49, 6, 6);
+        }
+        .ipttbtn{
+            background-color: rgb(250, 250, 250);
+            color: rgb(0, 0, 0);
+            font-size: 200%;
+            border-radius: 10px;
+
+        }
+        .ipttbtn:hover{
+            background-color: rgb(202, 255, 215);
+            color: rgb(32, 32, 32);
+        }
+        
+        .midpart {
+            padding-top: 5vh;
+            border-radius: 5px;
+            background-color: rgb(226, 226, 226);
+            border: 3px solid rgb(44, 44, 44);
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            padding-top: 5vh;
+            margin-top: 5vh;
+        }
+        
+        .livemap {
+            padding-top: 1vh;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(44, 44, 44);
+            height: 50%;
+            width: 25%;
+            margin: auto;
+            padding: 1px;
+            padding-top: 1vh;
+            margin-top: 1vh;
+            text-align: center;
+        }
+        
+        .traindetails {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border: 2px solid rgb(44, 44, 44);
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgb(202, 202, 202);
+        }
+        
+        .traindetail {
+            width: 90%;
+            height: 10vh;
+            justify-content: space-around;
+            padding-left: 10px;
+        }
+        
+        .footer {
+            position: sticky;
+            bottom: 1vh;
+            display: flex;
+            flex-direction: row;
+            color: whitesmoke;
+            height: 10vh;
+            justify-content: space-around;
+            width: 90vw;
+            margin: auto;
+            margin-top: 15vh;
+        }
+        
+        .btmbtn {
+            width: 25vw;
+            height: 10vh;
+            background-color: rgb(43, 43, 43);
+            font-size: 200%;
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+        
+        .btmbtn:hover {
+            width: 27vw;
+            height: 11vh;
+            background-color: rgb(0, 0, 0);
+            font-size: 240%;
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            transition: 100ms;
+        }
+        
+        #inform {
+            text-align: center;
+        }
+        
+        #radtxt {
+            font-size: 200%;
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #condn{
+            visibility: hidden;
+        }
+        
+        @media (max-width: 800px) {
+            .traindetails {
+                width: 90%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border: 2px solid rgb(61, 100, 230);
+                padding: 5px;
+                border-radius: 2px;
+                background-color: rgb(202, 202, 202);
+            }
+            .livemap {
+                height: 90%;
+                width: 90%;
+            }
+            #mlogo {
+                padding-top: 5vh;
+                padding-right: 10vh;
+                height: 10vh;
+                margin: auto;
+            }
+            select {
+                width: 80%;
+                margin-top: 2vh;
+            }
+            #txtipt {
+                width: 80%;
+                margin-top: 2vh;
+            }
+            #btnipt {
+                margin-top: 2vh;
+                width: 80%;
+                margin-left: 10%;
+                margin-bottom: 15vh;
+            }
+            #btnipt:hover {
+                transition-duration: 1000ms;
+                width: 84%;
+                color: whitesmoke;
+            }
+        }
+        
+         ::-webkit-scrollbar {
+            width: 1px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        
+.ipttbtn {
+            background-color: rgb(60,100,240);
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            top: auto;
+            left:auto
+           /* border: 3px dashed red;*/
+         }
+         .ipttbtn:hover {
+         
+            background-color:blue;
+            color:white;
+            font-size: 17px;
+            padding: 23px;
+            border-radius: 15px;
+           
+           /* border: 3px solid red;*/
+         }
+
+         #query {
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 5vh;
+            margin-bottom: 5vh; }
+
+            #radtxt{
+                margin-left: 20%;
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }

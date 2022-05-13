@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href=css/index.css>
+    <link rel="shortcut icon" href="res/train.png" type="image/x-icon">
+    <title>Live Train Query</title>
+
+</head>
+<body>
+
+    <div class='header'>
+        
+          <div class="logo">
+               <img src="res/train.png" id="mlogo" alt="logo">
+          </div>
+          <div class='heading'>
+               <h1>Live Train Query Demo Website</h1>
+          </div>
+    </div>
+
+
+   
+
+         <div class="toppart">
+                  
+                   
+             <div class=" form search">
+                    <form  id="foarm">
+                            <h1 class="lve">Live Train Query</h1>
+                            <input type="number" name="search" placeholder="Search with train number" id="txtipt">
+
+                     </form>
+                     <button id='btnipt' onclick='search_query()'>search</button>
+             </div>
+         </div>
+         
+     <div id="inform" >
+      <h2 > Can You Tell Us How Crowded the Train Is?</h2>
+           <div id="radtxt">
+           <button  onclick="fbck('most seats empty')" class="ipttbtn"  >Most seats empty<br></button>
+           <button  onclick="fbck('few seats empty')" class="ipttbtn"  >Few seats empty<br></button>
+           <button  onclick="fbck('seats full')" class="ipttbtn"  >Seats are almost full<br></button>
+           <button  onclick="fbck('few standing')" class="ipttbtn"  >Few standing<br></button>
+           <button  onclick="fbck('very crowded')" class="ipttbtn"  >Very crowded<br></button>
+           </div>
+       
+   </div>
+   <div id="query" >
+       <h1>thanks for helping us</h1>
+</div>
+
+</div>
+
+         <div class="midpart">
+            
+             <div class="livemap" >
+                 
+                <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embeddedmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Palakkad+railway+station&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="codefor-googlemap" rel="nofollow" href="https://www.embed-map.com" id="make-mapdata">https://www.embed-map.com</a><style>#embeddedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+             </div>
+
+             <div>
+                <h1>Train Details</h1>
+                <table style="width:100%">
+             <tr>
+                  <th  class="odd"> <h2>Train Name</h2></th>
+                  <td class="odd" id="tname"></td>
+            </tr>
+        
+            
+                    <tr class="even" >
+                 <th class="even"  > <h2>Train Number</h2></th>
+                    <td class="even" id="tnum"></td>
+                    </tr>
+                
+         
+                
+
+                    
+                    <tr class="odd"  >
+                  <th class="odd" > <h2>Train Source</h2></th>
+                    <td class="odd"  id="tsrc"></td>
+                    </tr>
+                
+       
+
+                    <tr class="even" >
+                   <th class="even" > <h2>Train Destination</h2></th>
+                    <td class="even"  id="tdst"></td>
+                    </tr>
+            
+                
+
+                    
+                    <tr class="odd"  >
+                    <th class="odd" ><h2> Available compartments</h2></th>
+                    <td class="odd" id="tcmp"></td>
+                    </tr>
+                
+               
+
+                    <tr class="even"  >
+                  <th class="even" > <h2> Compartments status</h2></th>
+                    <td class="even" id="tscmp"></td>
+                    </tr>
+             
+                
+
+                    <tr class="odd">
+                 <th class="odd" ><h2> General compartments</h2></th>
+                    <td  id="nagc"class="odd" ></td>
+                    </tr></table>
+
+
+
+</div>
+</div>
+             </div>
+          </div>
+     
+
+
+       
+    </div>
+
+                <div class="footer">
+               <button class="btmbtn " onclick="qshow()" value="query">Query</button>
+               <button class="btmbtn " onclick="ishow()" value="inform" >Inform</button>
+                </div>
+                   
+    
+</body>
+</html>
